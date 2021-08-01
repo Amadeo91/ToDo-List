@@ -1,0 +1,78 @@
+.tasksBoard {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 200px auto 0;
+    width: 95%;
+    height: 100%;
+}
+
+.tasksBoard__container {
+    position: relative;
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+.tasksBoard__task {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    width: 200px;
+    transform: translate(-50%, 50%);
+    font-size: 1.5em;
+}
+
+
+.tasksBoard__note {
+    width: 250px;
+    height: 100%;
+}
+
+.taskBoard__done {
+    position: absolute;
+    bottom: 30px;
+    left: 60px;
+    font-size: 20px;
+    color: rgb(84, 151, 16);
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.taskBoard__done:hover {
+    font-size: 25px;
+    color: rgb(135, 226, 44);
+}
+
+.taskBoard__delete {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    font-size: 40px;
+    color: rgb(185, 30, 9);
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.taskBoard__delete:hover {
+    font-size: 45px;
+    color: rgb(250, 41, 4);
+}
+
+.js-taskThrough {
+    text-decoration: line-through 6px;
+}
+
+@media (max-width: 1056px) {
+    .tasksBoard {
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 793px) {
+    .tasksBoard {
+        justify-content: center;
+    }
+}
